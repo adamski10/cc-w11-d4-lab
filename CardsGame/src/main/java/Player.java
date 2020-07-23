@@ -13,4 +13,13 @@ public class Player {
     public String getPlayerName() {
         return this.name;
     }
+
+    public void getCard(Deck deck) {
+      PlayingCard newCard = deck.dealCard();
+      this.cards.add(newCard);
+    }
+
+    public int countCards() {
+        return this.cards.size();
+    }
 }
