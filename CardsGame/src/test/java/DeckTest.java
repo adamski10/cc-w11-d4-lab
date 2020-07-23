@@ -9,12 +9,18 @@ public class DeckTest {
 
     @Before
     public void before() {
-        deck = new Deck(deck);
+        deck = new Deck();
     }
 
     @Test
     public void canGetDeckSize() {
         assertEquals(0, deck.getDeckSize());
+    }
+
+    @Test
+    public void deckHasCards(){
+      deck.populateDeck();
+      assertEquals(52, deck.getDeckSize());
     }
 
 

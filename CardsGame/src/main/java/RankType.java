@@ -1,4 +1,4 @@
-public enum Card {
+public enum RankType {
 
     ACE(1),
     TWO(2),
@@ -16,7 +16,7 @@ public enum Card {
 
     private final int value;
 
-    Card(int value) {
+    RankType(int value) {
         this.value = value;
     }
 
