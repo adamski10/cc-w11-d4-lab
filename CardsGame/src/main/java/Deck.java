@@ -34,5 +34,8 @@ public class Deck {
     }
 
 
+    public void dealCard() {
+        this.deck.remove(0);
+    }
 }
 

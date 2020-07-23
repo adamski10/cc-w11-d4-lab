@@ -33,5 +33,12 @@ public class DeckTest {
         assertNotEquals(card2, card1);
     }
 
+    @Test
+    public void canDealCard(){
+      deck.shuffleCards();
+      deck.dealCard();
+      assertEquals(51, deck.getDeckSize());
+    }
+
 
 }
